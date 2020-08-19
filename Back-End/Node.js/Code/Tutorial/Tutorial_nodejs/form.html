@@ -1,0 +1,24 @@
+<form action="http://localhost:8080/process_create" method="post">
+  <p><input type="text" name="title" placeholder="title"></p>
+
+  <p><textarea name="description" rows="10" cols="40" placeholder="description"></textarea></p>
+
+  <p><input type="submit"></p>
+  <!--
+
+  if click the submit, (No method)
+  URL = http://localhost:8080/process_create?title=title&description=description
+
+  => MAKE Query. (Form's Function of HTML)
+
+  if Real Data is in the URL, That can make Big Problem.
+
+  So! method = "post" !!
+
+  if click the submit, (POST method)
+  URL = http://localhost:8080/process_create => No problem
+
+  Real Data is in POST Message
+
+  -->
+</form>
