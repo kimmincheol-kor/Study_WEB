@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>KMC's HOME</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font1.css">
+    <link rel="stylesheet" href="css/font2.css">
+
+    <style>
+
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+      .w3-row-padding img {margin-bottom: 12px}
+
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {width: 120px;background: #222;}
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      /* Remove margins from "page content" on small screens */
+
+      #main {margin-left: 120px}
+
+      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    </style>
+
+    <script src="js/kmc.js"> </script>
+  </head>
+
+  <body class="w3-black">
+    <div id="kmc_grid">
+      <!-- MENU -->
+      <!-- Icon Bar (Sidebar - hidden on small screens) -->
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <a href="#main"><img src="img/kmc.jpg" style="width:100%"></a>
+
+        <a href="#main_content" class="w3-bar-item w3-button w3-padding-large w3-black" onclick="
+          kmc_makeContent('content_about');
+        ">
+          <i class="fa w3-xxlarge">A</i>
+          <p>ABOUT KMC</p>
+        </a>
+
+        <a href="#main_content" class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="
+          kmc_makeContent('content_biography');
+        ">
+          <i class="fa w3-xxlarge">B</i>
+          <p>BIOGRAPHY</p>
+        </a>
+
+        <a href="#main_content" class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="
+          kmc_makeContent('content_career');
+        ">
+          <i class="fa w3-xxlarge">C</i>
+          <p>CAREER</p>
+        </a>
+
+        <a href="#main_content" class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="
+          kmc_makeContent('content_dial');
+        ">
+          <span class="fa w3-xxlarge">D</span>
+          <p>DIAL</p>
+        </a>
+      </nav>
+
+      <!-- Navbar on small screens (Hidden on medium and large screens) -->
+      <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+          <a href="#main_content" class="w3-bar-item w3-button" style="width:25% !important" onclick="
+            kmc_makeContent('content_about');
+          ">ABOUT KMC</a>
+          <a href="#main_content" class="w3-bar-item w3-button" style="width:25% !important" onclick="
+            kmc_makeContent('content_biography');
+          ">BIOGRAPHY</a>
+          <a href="#main_content" class="w3-bar-item w3-button" style="width:25% !important" onclick="
+            kmc_makeContent('content_career');
+          ">CAREER</a>
+          <a href="#main_content" class="w3-bar-item w3-button" style="width:25% !important" onclick="
+            kmc_makeContent('content_dial');
+          ">CONTACT</a>
+        </div>
+      </div>
+      <!-- End of Menu -->
+
+      <!-- Content -->
+      <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black">
+          <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> MinCheol.</h1>
+          <p>Junior Program Developer.</p><br>
+          <img src="img/me.png" alt="boy" class="w3-image" width="100%" height="100%">
+        </header>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="main_content">
+          <!-- innerHTML -->
+        </div>
+      </div>
+
+    </div>
+
+<!--
+        <!-- Footer --
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer --
+      </footer> -->
+  </body>
+</html>

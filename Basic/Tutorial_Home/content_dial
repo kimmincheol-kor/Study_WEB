@@ -1,0 +1,8 @@
+  <h2 class="w3-text-light-grey">Contact Me</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <div class="w3-section">
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Seoul, Korea</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone : 010-8843-7447</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email : kimmincheol.dev@gmail.com</p>
+  </div>

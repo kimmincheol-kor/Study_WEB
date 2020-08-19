@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>KMC's HOME</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font1.css">
+    <link rel="stylesheet" href="css/font2.css">
+
+    <style>
+
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+      .w3-row-padding img {margin-bottom: 12px}
+
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {width: 120px;background: #222;}
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      /* Remove margins from "page content" on small screens */
+
+      #main {margin-left: 120px}
+
+      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    </style>
+
+
+  </head>
+
+  <body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <a href="#"><img src="img/kmc.jpg" style="width:100%"></a>
+
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa w3-xxlarge">A</i>
+        <p>ABOUT KMC</p>
+      </a>
+
+      <a href="#biogr" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa w3-xxlarge">B</i>
+        <p>BIOGRAPHY</p>
+      </a>
+
+      <a href="#career" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa w3-xxlarge">C</i>
+        <p>CAREER</p>
+      </a>
+
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <span class="fa w3-xxlarge">D</span>
+        <p>DIAL</p>
+      </a>
+
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT KMC</a>
+        <a href="#biogr" class="w3-bar-item w3-button" style="width:25% !important">BIOGRAPHY</a>
+        <a href="#career" class="w3-bar-item w3-button" style="width:25% !important">CAREER</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> MinCheol.</h1>
+        <p>Junior Program Developer.</p><br>
+        <img src="img/me.png" alt="boy" class="w3-image" width="100%" height="100%">
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Introduce myself</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>
+          난 행복하다
+        </p>
+        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <p class="w3-wide">Web Front-end</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:10%">10%</div>
+        </div>
+        <p class="w3-wide">Web Back-end</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:0%">0%</div>
+        </div>
+        <p class="w3-wide">Andoroid App</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:5%">5%</div>
+        </div>
+        <p class="w3-wide">C, C++</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:95%">95%</div>
+        </div>
+        <p class="w3-wide">Python</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:80%">80%</div>
+        </div>
+        <p class="w3-wide">Java</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:10%">10%</div>
+        </div>
+        <br>
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">0</span><br>
+            Partners
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">0</span><br>
+            Projects Done
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">0</span><br>
+            Happy Clients
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">0</span><br>
+            Meetings
+          </div>
+        </div>
+
+        <br>
+
+        <button class="w3-button w3-dark-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+
+        <!-- Grid for pricing tables
+        <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+              <li class="w3-padding-16">Web Design</li>
+              <li class="w3-padding-16">Photography</li>
+              <li class="w3-padding-16">5GB Storage</li>
+              <li class="w3-padding-16">Mail Support</li>
+              <li class="w3-padding-16">
+                <h2>$ 10</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-half">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+              <li class="w3-padding-16">Web Design</li>
+              <li class="w3-padding-16">Photography</li>
+              <li class="w3-padding-16">50GB Storage</li>
+              <li class="w3-padding-16">Endless Support</li>
+              <li class="w3-padding-16">
+                <h2>$ 25</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+              </li>
+            </ul>
+          </div>
+        <!-- End Grid/Pricing tables
+        </div>
+      <!-- End About Section -->
+      </div>
+
+
+      <div class="w3-padding-64 w3-content" id="biogr">
+        <!-- Testimonials -->
+        <h2 class="w3-text-light-grey">My Biography</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="w3-padding-64 w3-content" id="career">
+        <h2 class="w3-text-light-grey">My Carrer</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+
+
+      <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Seoul, Korea</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone : 010-8843-7447</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email : kimmincheol.dev@gmail.com</p>
+        </div>
+
+      <!-- End Contact Section -->
+      </div>
+
+        <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+      </footer>
+
+    <!-- END PAGE CONTENT -->
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,52 @@
+#header_ {
+  font-size:50px;
+  color:black;
+  text-align:center;
+
+  border-bottom:2px solid gray;
+
+  margin:0;
+  padding:30px;
+}
+
+#menu_ {
+  /*font-size:20px;*/
+  color:purple;
+  /*text-align:left;*/
+
+  border-right:2px solid gray;
+
+  width:100px;
+  margin:0px;
+  padding:20px;
+}
+
+#grid_ {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+p {
+  margin:0;
+  padding:20px;
+}
+
+@media(max-width:800px)
+{
+  #grid_ {
+    display: block;
+  }
+
+  #menu_ {
+    border-right:none;
+    border-bottom: 2px solid gray;
+    text-align:center;
+    width:auto;
+  }
+
+  p {
+    margin:0;
+    padding:30px;
+  }
+
+}
