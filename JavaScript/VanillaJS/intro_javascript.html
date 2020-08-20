@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>js tutorial</title>
+    <script>
+      function nightDayHandler(self){
+        var target = document.querySelector('body');
+
+        if(self.value =='night')
+        {
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          self.value = 'day';
+        }
+        else
+        {
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          self.value = 'night';
+        }
+      }
+
+      var MyBody = {
+        setbgColor:function (color){
+          document.querySelector('body').style.backgroundColor = color;
+        },
+        setColor:function (color){
+          document.querySelector('body').style.color = color;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <script type="text/javascript">
+      document.write('hello');
+      document.write(1+1);
+    </script>
+
+    <h1>HTML</h1>
+    hello
+    1+1
+
+    <br><br><br><br>
+
+    <!-- onclick의 값에는 무조건 자바스크립트.  -->
+    <input type="button" value="hi" onclick="alert('hi')">
+    <input type="text" onchange="alert('changed')">
+    <input type="text" onkeydown="alert('keydown')">
+
+    <br><br><br><br>
+
+    <input type="button" value="day" onclick="
+      if(document.body.dataset.mode ==='night')
+      {
+        document.body.style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.body.dataset.mode = 'day';
+        this.value = 'day'
+      }
+      else
+      {
+        document.body.style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.body.dataset.mode = 'night';
+        this.value = 'night'
+      }
+    ">
+
+    <br><br>
+
+    <input type="button" value="day" onclick="nightDayHandler(this);">
+
+    <br><br><br><br>
+
+    <h2>Object</h2>
+    <script type="text/javascript">
+      var cowork = {
+        "dev" : "kmc",
+        "des" : "aaa"
+      };
+      document.write("dev : " + cowork.dev + "<br>");
+      document.write(cowork.des + "<br>");
+      cowork.booo = "boo";
+      document.write(cowork.booo + "<br>");
+      cowork["pine"] = "apple";
+      document.write(cowork.pine + "<br>");
+    </script>
+
+    <br><br>
+
+    <h2>Iterator</h2>
+    <script type="text/javascript">
+      for(var key in cowork){
+        document.write(key + " : " + cowork[key] + "<br>");
+      }
+    </script>
+
+    <br><br>
+
+    <h2>Property & Method</h2>
+    <p> Property : Var in object <br>
+        Method : Function in object
+    </p>
+    <script type="text/javascript">
+
+      cowork.myMethod2 = function() {
+        for(var key in this){
+          document.write(key + " : " + cowork[key] + "<br>");
+        }
+      }
+
+      cowork.myMethod2();
+
+      MyBody.setbgColor("grey");
+
+    </script>
+
+    <script src="tuto.js"></script>
+
+  </body>
+</html>
