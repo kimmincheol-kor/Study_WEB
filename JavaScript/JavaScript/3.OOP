@@ -1,0 +1,94 @@
+# JavaScript - OOP
+
+## ES6 이전의 클래스
+- 자바스크립트에서 Class라는 개념은 ES6에서 등장하였다. 이전에는 ProtoType을 사용하여 Class를 구현
+- 프로퍼티, 메소드, 상속 모두 ProtoType으로 구현.
+
+```
+// 함수 Animal() 선언
+function Animal () { 
+    this.name = "동물"; // 프로퍼티
+}
+
+// Animal의 프로토타입에 getName() 메소드 생성
+Animal.prototype.getName = function () { 
+    console.log(this.name);
+}
+
+// 함수 Dog() 선언
+function Dog () {
+    this.name = "강아지";
+ }
+
+// Dog의 Prototype에 Animal 객체를 대입 => 상속
+Dog.prototype = new Animal();
+
+// Dog의 Prototype의 생성자에 Dog()를 대입
+Dog.prototype.constructor = Dog;
+
+var myDog = new Dog();
+var myPet = new Animal();
+
+console.dir(myDog); // name = 강아지
+console.dir(myPet); // name = 동물
+
+myDog.getName(); // 강아지
+myPet.getName(); // 동물
+```
+
+## ES6 이후의 클래스
+- 더욱 명료하게 OOP를 구현할 수 있게 되었다.
+- 클래스는 `특별한 함수`이기 때문에 함수와 동일하게 Declaration과 Expression으로 만들 수 있다.
+- 클래스 선언과 표현 모두 Hoisting 되지 않는다.
+
+#### 클래스 선언
+```
+class Polygon {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+}
+```
+
+#### 클래스 표현
+```
+// 익명 클래스
+var Polygon = class { 
+  constructor(height, width) { 
+    this.height = height; 
+    this.width = width; 
+   } 
+};
+
+// 기명 클래스
+var Polygon = class Polygon { 
+  constructor(height, width) { 
+    this.height = height; 
+    this.width = width; 
+   } 
+};
+```
+
+#### 클래스 상속
+```
+class Square extends Polygon { 
+  constructor(length) { 
+    // length로 다각형의 넓이와 높이를 정의하기 위해 부모클래스의 생성자를 호출합니다. 
+     super(length, length); 
+     // Note: 파생 클래스에서, 'this'를 사용하기 전에는 반드시 super()를 
+     // 호출하여야 합니다. 그렇지 않을 경우 참조에러가 발생합니다. 
+     this.name = 'Square'; 
+  } 
+  
+  get area() { 
+    return this.height * this.width; 
+  } 
+
+  set area(value) { 
+    this.area = value; 
+  } 
+}
+```
+
+참고 : https://beomy.tistory.com/15?category=591557
