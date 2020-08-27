@@ -1,0 +1,26 @@
+{
+  "name": "kmc_ttbc",
+  "version": "1.0.0",
+  "description": "20200827",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "training"
+  ],
+  "author": "kmc",
+  "license": "ISC",
+  "my_Comment": [
+    "package.json file is Managing Project, Dependencies",
+    "when other pc has this file, It help you",
+    "to Build Same Develop Environment.",
+    "dependencies = Appoint Dependencies Module when Deploying package",
+    "devDependencies = (...) when Developing"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "passport": "^0.4.1"
+  }
+}
