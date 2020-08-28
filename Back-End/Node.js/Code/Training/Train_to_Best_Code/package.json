@@ -19,6 +19,7 @@
     "devDependencies = (...) when Developing"
   ],
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "http": "0.0.1-security",
     "passport": "^0.4.1"
