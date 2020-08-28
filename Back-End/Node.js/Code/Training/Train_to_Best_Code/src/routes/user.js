@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/c-home');
-
-// External Router
-const userRouter = require('./user');
-const ownerRouter = require('./owner');
+const controller = require('../controllers/c-user');
 
 // Routes - Controllers Structure
 router.route('/')
@@ -12,8 +8,5 @@ router.route('/')
     .post(controller.postAPI)
     .put(controller.putAPI)
     .delete(controller.deleteAPI)
-
-router.use('/user', userRouter);
-router.use('/owner', ownerRouter);
 
 module.exports = router;

@@ -1,15 +1,15 @@
 exports.getAPI = (req, res) => {
-    res.send('GET home');
+    res.send('GET Owner');
 }
 
 exports.postAPI = (req, res) => {
-    res.send('POST home');
+    res.send('POST Owner');
 }
 
 exports.putAPI = (req, res) => {
-    res.send('PUT home');
+    res.send('PUT Owner');
 }
 
 exports.deleteAPI = (req, res) => {
-    res.send('DELETE home');
+    res.send('DELETE Owner');
 }
