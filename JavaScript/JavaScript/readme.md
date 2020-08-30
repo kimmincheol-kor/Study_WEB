@@ -17,3 +17,9 @@
 
 ### [6. Function][link6]
 [link6]: https://github.com/kimmincheol-kor/Study_WEB/blob/master/JavaScript/JavaScript/6.Function.md
+
+### [7. Callback][link7]
+[link7]: https://github.com/kimmincheol-kor/Study_WEB/blob/master/JavaScript/JavaScript/7.Callback.md
+
+### [8. Promise][link8]
+[link8]: https://github.com/kimmincheol-kor/Study_WEB/blob/master/JavaScript/JavaScript/8.Promise.md
