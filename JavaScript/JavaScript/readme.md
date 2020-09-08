@@ -23,3 +23,6 @@
 
 ### [8. Promise][link8]
 [link8]: https://github.com/kimmincheol-kor/Study_WEB/blob/master/JavaScript/JavaScript/8.Promise.md
+
+### [9. StrictMode][link9]
+[link9]: https://github.com/kimmincheol-kor/Study_WEB/blob/master/JavaScript/JavaScript/9.StrictMode.md
