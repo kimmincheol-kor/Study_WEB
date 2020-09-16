@@ -4,6 +4,8 @@
    - https://poiemaweb.com/typescript-introduction
 - Why You Shouldn't Be Scared
    - https://han41858.tistory.com/14
+   
+<img src = "https://poiemaweb.com/img/atscript.png"/>
 
 Introduction
 --------
