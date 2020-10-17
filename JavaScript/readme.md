@@ -1,4 +1,4 @@
-# All about JavaScript
+# All of JavaScript
 
 ### [1. JavaScript][JSlink]
 [JSlink]: https://github.com/kimmincheol-kor/Study_WEB/tree/master/JavaScript/JavaScript
